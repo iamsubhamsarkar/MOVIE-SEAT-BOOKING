@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(70, 55, 83);
+    display: flex;
+    flex-direction: column;
+    color: rgb(247, 242, 242);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'lato', 'sans-serif';
+    
+}
+
+.seat{
+
+    background-color: rgb(230, 219, 240);
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    }
+
+    .row{
+        display: flex;
+    }
+
+    .movie-container{
+        margin: 20px 0;
+
+    }
+
+    .movie-container select{
+
+        background-color: antiquewhite;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 5px 15px 5px 15px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .seat.Selected {
+        background-color: rgb(98, 87, 107);
+    }
+
+    .seat.Occupied {
+        background-color: rgb(47, 36, 53);
+    }
+    .seat:nth-of-type(2){
+        margin-right: 15px;
+    }
+
+    .seat:nth-last-of-type(3){
+        margin-right: 15px;
+    }
+    .seat:not(.Occupied):hover{
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    .showcase .seat:not(.Occupied):hover{
+        cursor: default;
+        transform: scale(1);
+    }
+
+    .showcase{
+        background-color: black;
+        padding: 5px;
+        border-radius: 5px;
+        color: #777;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+            
+    }
+
+    .showcase li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .screen{
+        background-color: azure;
+        height: 70px;
+        width:auto;
+        margin: 5px;
+        transform: rotateX(-45deg);
+        box-shadow: 0 3px 10px rgb(247, 242, 242);
+
+    }
+
+    .container{
+        perspective: 1000px;
+        margin: 30px;
+            }
+
+    p.text {
+        color: rgb(230, 219, 240);
+        margin: 5px 0;
+    }
+    p.text span{
+        color: rgb(169, 150, 184);
+    }
